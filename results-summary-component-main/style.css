@@ -1,0 +1,86 @@
+body{
+font-family: Hanken;
+font-size: 18px;
+}
+.firstCard{
+background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+border-bottom-left-radius: 2rem;
+border-bottom-right-radius: 2rem;
+color:#fff;
+text-align: center;
+padding:2rem;
+}
+.widthController{
+    max-width: 280px;
+    margin:0 auto;
+}
+.result{
+    padding-top:1rem;
+    padding-bottom: 1.5rem;
+    
+}
+.number{
+    max-width: 30%;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1rem;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    padding: 3rem 2rem 2.5rem 2rem;
+    border-radius: 100%;
+    margin:auto;
+
+}
+.number span::before{
+    content: "\a";
+    white-space: pre;
+}
+.number span{
+    font-size:1rem;
+    margin-top:0;
+}
+/* .firstSection p:last-child{
+    text-align: 
+} */
+
+.secondSection{
+    padding:1rem;
+
+
+}
+.secondSection .widthController > *{
+    margin-bottom: 1rem;
+}
+.card{
+width: 100%;
+background-color:hsla(241, 100%, 89%,0.3);
+padding:1rem;
+display:flex;
+border-radius: 10px;
+justify-content: space-between;
+}
+
+.btn{
+    width:100%;
+    padding:1rem;
+    background-color:rgb(55, 55, 207);
+    color:white;
+    border-radius: 2rem;
+    margin-left:1rem;
+}
+
+@media screen and (width > 450px){
+    .control{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .firstCard{
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+    .secondSection{
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        box-shadow: 1px 1px white;
+    }
+}
